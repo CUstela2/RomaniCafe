@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+*{
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f3f1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Aplica o cursor de café em todos os botões */
+button {
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+
+}
+
+.menu-buttons button,
+.carrinho button,
+.pagamento button,
+.label-input-file {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #5a7d72;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.menu-buttons button:hover,
+.carrinho button:hover,
+.pagamento button:hover,
+.label-input-file:hover {
+  background-color: #4a6b63;
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+
+}
+
+header {
+  background-color: #4f7a76;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header-container p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.lateral-esquerda {
+  width: 25%;
+  position: relative;
+}
+
+footer {
+  background-color: #6d8b85;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+section {
+  min-height: 73vh;
+  padding-bottom: 80px;
+}
+
+.lateral-esquerda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.dooca.store/103018/products/1cfd2539-d3ed-40e5-8647-31f3549e5f85-1_640x640.jpeg?v=1722465795000&webp=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.lateral-esquerda img {
+  display: none;
+}
+
+.coluna-central {
+  width: 50%;
+  padding: 10px;
+}
+
+.menu-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.menu-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #5a7d72;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.menu-buttons button:hover {
+  background-color: #4a6b63;
+}
+
+.products {
+  display: none;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.products h2 {
+  color: #4a3a2a;
+}
+
+.products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products li {
+  background-color: #f5f3f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.lateral-direita {
+  width: 25%;
+  padding: 10px;
+  background-color: #aec1c2;
+}
+
+.carrinho {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #f5f3f1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.carrinho h2 {
+  color: #4a3a2a;
+  text-align: center;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.carrinho button {
+  background-color: #d04d43;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.products li button {
+  margin-left: 10px;
+  background-color: #38a167;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagamento {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #f7f6f3;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pagamento h2 {
+  color: #4a3a2a;
+  margin-bottom: 15px;
+}
+
+.pagamento button {
+  padding: 10px 20px;
+  background-color: #5a7d72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagamento button:hover {
+  background-color: #4a6b63;
+}
+
+.chamada-pedido {
+  text-align: center;
+  margin-top: 30px;
+  animation: pulse 2s infinite;
+}
+
+.chamada-pedido h2 {
+  font-size: 32px;
+  color: #5a7d72;
+  text-shadow: 1px 1px 2px #000000;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .lateral-esquerda,
+  .coluna-central,
+  .lateral-direita {
+    width: 100%;
+  }
+
+  .imagem-anteposta {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+input[type="file"] {
+  margin-top: 20px;
+  display: none;
+}
+
+.label-input-file {
+  margin-top: 20px;
+
+  display: inline-block;
+  background-color: #5a7d72;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.label-input-file:hover {
+  background-color: #4a6b63;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4a3a2a;
+  font-weight: bold;
+  text-align: center;
+}
+.alerta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alerta-conteudo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.alerta-conteudo p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.alerta-conteudo button {
+  padding: 10px 20px;
+  background-color: #d04d43;
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.alerta-conteudo button:hover {
+  background-color: #692525;
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+  
+}
+.alerta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alerta-conteudo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.alerta-conteudo p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.alerta-conteudo button {
+  padding: 10px 20px;
+  background-color: #d04d43;
+
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: url('./img/icons8-hot-coffe-48.png'), auto;
+}
+
+.alerta-conteudo button:hover {
+  background-color: #692525;
+
+}
