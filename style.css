@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  cursor: url("./img/icons8-hot-coffe-48.png"),auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f9f7f4; /* Off-white suave */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: #3a3a3a;
+  background-color: #555;
+}
+
+button {
+  cursor: url("./img/icons8-hot-coffe-48.png"), auto;
+}
+
+.menu-buttons button,
+.carrinho button,
+.pagamento button,
+.label-input-file {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #a58f78; /* Terracota suave */
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-buttons button:hover,
+.carrinho button:hover,
+.pagamento button:hover,
+.label-input-file:hover {
+  background-color: #8a7662;
+  transform: translateY(-2px);
+}
+
+header {
+  background: linear-gradient(135deg, #d4a373 0%, #a58f78 100%); /* Degradê de terracota */
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.header-container p {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.lateral-esquerda {
+  width: 25%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+footer {
+  background: linear-gradient(135deg, #a58f78 0%, #8a7662 100%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 5px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+section {
+  min-height: 73vh;
+  padding-bottom: 80px;
+}
+
+.lateral-esquerda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.dooca.store/103018/products/1cfd2539-d3ed-40e5-8647-31f3549e5f85-1_640x640.jpeg?v=1722465795000&webp=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.coluna-central {
+  width: 50%;
+  padding: 15px;
+  background-color: #858585;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu-buttons {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.products {
+  display: none;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.products h2 {
+  color: #6b4f3b;
+  font-weight: 600;
+  border-bottom: 2px solid #e0d5c8;
+  padding-bottom: 10px;
+}
+
+.products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-left: 4px solid #d4a373;
+  transition: transform 0.3s ease;
+}
+
+.products li:hover {
+  transform: translateX(5px);
+}
+
+.lateral-direita {
+  width: 25%;
+  padding: 20px;
+   background-color: #858585;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.carrinho {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.carrinho h2 {
+  color: #6b4f3b;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f7f4;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.carrinho li:hover {
+  background-color: #f0ece6;
+}
+
+.carrinho button {
+  background-color: #c17c74;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.carrinho button:hover {
+  background-color: #a56860;
+}
+
+.products li button {
+  margin-left: 10px;
+  background-color: #a58f78;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.pagamento {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.pagamento h2 {
+  color: #6b4f3b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.chamada-pedido {
+  text-align: center;
+  margin-top: 30px;
+  animation: pulse 2s infinite;
+}
+
+.chamada-pedido h2 {
+  font-size: 32px;
+  color: #d4a373;
+  margin: 0;
+  font-weight: 600;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .lateral-esquerda,
+  .coluna-central,
+  .lateral-direita {
+    width: 100%;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.label-input-file {
+  display: inline-block;
+  background-color: #a58f78;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.label-input-file:hover {
+  background-color: #8a7662;
+  transform: translateY(-2px);
+}
+
+.file-name {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #6b4f3b;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alerta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alerta-conteudo {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.alerta-conteudo p {
+  font-size: 17px;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.alerta-conteudo button {
+  padding: 12px 28px;
+  background-color: #c17c74;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.alerta-conteudo button:hover {
+  background-color: #a56860;
+  transform: translateY(-2px);
+}
